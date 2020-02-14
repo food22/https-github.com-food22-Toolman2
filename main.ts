@@ -1,5 +1,5 @@
 //% weight=0 color=#3CB371 icon="\uf0ad" block="ReadSignal"
-namespace ReadSingal {
+namespace readSingal {
     let signalTime = 0
     let signalID = 0
     /**
