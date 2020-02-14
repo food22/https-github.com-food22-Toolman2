@@ -5,7 +5,7 @@ namespace tools {
     /**
     * 計算長方形面積，並回傳
     */
-    //% blockId="areaOfRectangle" block="area of rectangle length %length|width %width"
+    //% blockId="areaOfRectangle" block="讀取信號 %length|width %width"
     //% blockGap=2 weight=0
     export function areaOfRectangle(SignalGroup: number[]): void {
         while  (pins.digitalReadPin(DigitalPin.P0) == 1)
