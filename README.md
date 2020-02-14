@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-readsignal=github:food22/pxt-readsignal
+readSignal=github:food22/pxt-readsignal
 ```
