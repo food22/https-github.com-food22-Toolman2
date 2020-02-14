@@ -1,14 +1,14 @@
 //% weight=0 color=#3CB371 icon="\uf0ad" block="Tools"
-namespace tools {
+namespace ReadSingal {
     let SignalTime = 0
     let SignalID = 0
     /**
     * 計算長方形面積，並回傳
     */
-    //% blockId="areaOfRectangle" block="讀取信號 %length|width %width"
+    //% blockId="areaOfRectangle" block="ReadSingal %length|width %width"
     //% blockGap=2 weight=0
     export function areaOfRectangle(SignalGroup: number[]): void {
-        while  (pins.digitalReadPin(DigitalPin.P0) == 1)
+        while (pins.digitalReadPin(DigitalPin.P0) == 1)
         while (pins.digitalReadPin(DigitalPin.P0) == 0) {
             SingalTime++
             if (SignalTime > 3600 && SignalID !=0) {
