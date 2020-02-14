@@ -1,7 +1,7 @@
 {
-    "name": "ReadSignal",
+    "name": "readsignal",
     "version": "0.0.1",
-    "description": "這是專為測試用的micro:bit積木",
+    "description": "讀取號",
     "license": "MIT",
     "dependencies": {
         "core": "*"
