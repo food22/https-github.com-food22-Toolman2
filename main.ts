@@ -1,11 +1,11 @@
-//% weight=0 color=#3CB371 icon="\uf0ad" block="Tools"
+//% weight=0 color=#3CB371 icon="\uf0ad" block="ReadSignal"
 namespace ReadSingal {
     let signalTime = 0
     let signalID = 0
     /**
     * 計算長方形面積，並回傳
     */
-    //% blockId="areaOfRectangle" block="seadSingal %signalArray"
+    //% blockId="areaOfRectangle" block="ReadSignal %signalArray"
     //% blockGap=2 weight=0
     export function areaOfRectangle(signalArray: number[]): void {
         while (pins.digitalReadPin(DigitalPin.P0) == 1)
