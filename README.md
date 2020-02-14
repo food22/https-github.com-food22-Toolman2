@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-tools=github:food22/pxt-tools
+tools=github:food22/pxt-ReadSingal
 ```
