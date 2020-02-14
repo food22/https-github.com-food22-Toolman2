@@ -1,6 +1,6 @@
 # readSignal
 
-這是專為測試用的micro:bit積木
+這是測試用的micro:bit積木
 
 ## License
 
