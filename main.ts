@@ -1,36 +1,36 @@
 //% weight=0 color=#3CB371 icon="\uf0ad" block="Tools"
 namespace ReadSingal {
-    let SignalTime = 0
-    let SignalID = 0
+    let signalTime = 0
+    let signalID = 0
     /**
     * 計算長方形面積，並回傳
     */
-    //% blockId="areaOfRectangle" block="ReadSingal %SignalArray"
+    //% blockId="areaOfRectangle" block="seadSingal %signalArray"
     //% blockGap=2 weight=0
-    export function areaOfRectangle(SignalArray: number[]): void {
+    export function areaOfRectangle(signalArray: number[]): void {
         while (pins.digitalReadPin(DigitalPin.P0) == 1)
         while (pins.digitalReadPin(DigitalPin.P0) == 0) {
-            SingalTime++
-            if (SignalTime > 3600 && SignalID !=0) {
-                SignalTime = 0
-                SignalID = 0                
+            signalTime++
+            if (signalTime > 3600 && signalID !=0) {
+                signalTime = 0
+                signalID = 0                
                 return
             }
         }
-        SignalArray[num] = SignalTime
-        SignalTime = 0
-        num = 0
+        signalArray[signalID] = signalTime
+        signalTime = 0
+        signalID++
         while (pins.digitalReadPin(DigitalPin.P0) == 1) {
-            SingalTime++
-            if (SignalTime > 3600 && SignalID !=0) {
-                SignalTime = 0
-                SignalID = 0                
+            signalTime++
+            if (signalTime > 3600 && signalID !=0) {
+                signalTime = 0
+                signalID = 0                
                 return
             }
         }
-        SignalArray[num] = SignalTime
-        SignalTime = 0
-        num = 0          
+        signalArray[signalID] = signalTime
+        signalTime = 0
+        signalID        
         }
     }
     /**
