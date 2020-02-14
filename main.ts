@@ -5,9 +5,9 @@ namespace ReadSingal {
     /**
     * 計算長方形面積，並回傳
     */
-    //% blockId="areaOfRectangle" block="ReadSingal %length|width %width"
+    //% blockId="areaOfRectangle" block="ReadSingal %SignalArray"
     //% blockGap=2 weight=0
-    export function areaOfRectangle(SignalGroup: number[]): void {
+    export function areaOfRectangle(SignalArray: number[]): void {
         while (pins.digitalReadPin(DigitalPin.P0) == 1)
         while (pins.digitalReadPin(DigitalPin.P0) == 0) {
             SingalTime++
@@ -17,7 +17,7 @@ namespace ReadSingal {
                 return
             }
         }
-        SignalGroup[num] = SignalTime
+        SignalArray[num] = SignalTime
         SignalTime = 0
         num = 0
         while (pins.digitalReadPin(DigitalPin.P0) == 1) {
@@ -28,7 +28,7 @@ namespace ReadSingal {
                 return
             }
         }
-        SignalGroup[num] = SignalTime
+        SignalArray[num] = SignalTime
         SignalTime = 0
         num = 0          
         }
