@@ -1,4 +1,4 @@
-# ReadSignal
+# readSignal
 
 這是專為測試用的micro:bit積木
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-tools=github:food22/pxt-ReadSingal
+readsignal=github:food22/pxt-readsignal
 ```
