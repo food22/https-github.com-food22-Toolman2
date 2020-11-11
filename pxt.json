@@ -1,7 +1,7 @@
 {
     "name": "readSignal",
     "version": "0.0.1",
-    "description": "讀取信號",
+    "description": "沒有信號",
     "license": "MIT",
     "dependencies": {
         "core": "*"
