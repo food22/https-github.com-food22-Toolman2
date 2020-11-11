@@ -1,6 +1,6 @@
 {
-    "name": "readSignal",
-    "version": "0.0.1",
+    "name": "RubbishBin",
+    "version": "1.0",
     "description": "沒有信號",
     "license": "MIT",
     "dependencies": {
