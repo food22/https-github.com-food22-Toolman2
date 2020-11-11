@@ -1,9 +1,9 @@
 {
     "readSignal|block": "工具",
-    "readSignal.Running|block": "顯示運作畫面",
-    "readSignal.Checking|block": "顯示檢查畫面",
-    "readSignal.Moving|block": "判斷開啟",
-    "readSignal.Distance|block": "顯示距離 %距離",
-    "readSignal.ClearLight|block": "關閉所有燈",
-    "readSignal.GetMoveTime|block": "讀取判斷時間"
+    "readSignal.running|block": "顯示運作畫面",
+    "readSignal.checking|block": "顯示檢查畫面",
+    "readSignal.moving|block": "判斷開啟",
+    "readSignal.distance|block": "顯示距離 %距離",
+    "readSignal.clearLight|block": "關閉所有燈",
+    "readSignal.getMoveTime|block": "讀取判斷時間"
 }
