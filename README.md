@@ -1,4 +1,4 @@
-# readSignal
+# rubbishbin
 
 這是測試用的micro:bit積木
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-readSignal=github:food22/pxt-readSignal
+rubbishbin=github:food22/pxt-readSignal
 ```
