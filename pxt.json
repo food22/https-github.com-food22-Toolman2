@@ -1,5 +1,5 @@
 {
-    "name": "RubbishBin",
+    "name": "PlayAnime",
     "version": "1.0",
     "description": "垃圾桶",
     "license": "MIT",
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/tools-strings.json"
+        "_locales/zh/PlayAnime-strings.json"
     ],
     "public": true
 }
