@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/Anime-strings.json"
+        "_locales/zh/tools-strings.json"
     ],
     "public": true
 }
