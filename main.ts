@@ -8,7 +8,7 @@ namespace readSignal {
     /**
     * 運作中
     */
-    //% blockId="Running" block="Play Run"
+    //% blockId="running" block="Play Run"
     //% blockGap=2 weight=0
     export function Running(): void {
         check = 0;
@@ -25,7 +25,7 @@ namespace readSignal {
     /**
     * 偵測中
     */
-    //% blockId="Checking" block="Play Check"
+    //% blockId="checking" block="Play Check"
     //% blockGap=2 weight=1
     export function Checking(): void {
         move = 0;
@@ -58,7 +58,7 @@ namespace readSignal {
     /**
     * 運作中
     */
-    //% blockId="Moving" block="Play Move"
+    //% blockId="moving" block="Play Move"
     //% blockGap=2 weight=2
     export function Moving(): void {
         check = 0;
@@ -88,7 +88,7 @@ namespace readSignal {
    /**
     * 顯示距離
     */
-    //% blockId="Distance" block="Play Distance %length"
+    //% blockId="distance" block="Play Distance %length"
     //% blockGap=2 weight=3
     export function Distance(length: number): void {
         check = 0;
@@ -131,7 +131,7 @@ namespace readSignal {
     /**
     * 關閉所有燈
     */
-    //% blockId="ClearLight" block="Clear Light"
+    //% blockId="clearLight" block="Clear Light"
     //% blockGap=2 weight=4
     export function ClearLight(): void {
         for(let i = 0; i < 5; i++) {
@@ -144,7 +144,7 @@ namespace readSignal {
     /**
     * 讀取移動時間
     */
-    //% blockId="GetMoveTime" block="Get Move Time"
+    //% blockId="getMoveTime" block="Get Move Time"
     //% blockGap=10 weight=5
    export function GetMoveTime(): number {
        return move;
