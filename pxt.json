@@ -1,7 +1,7 @@
 {
     "name": "RubbishBin",
     "version": "1.0",
-    "description": "沒有信號",
+    "description": "垃圾桶",
     "license": "MIT",
     "dependencies": {
         "core": "*"
