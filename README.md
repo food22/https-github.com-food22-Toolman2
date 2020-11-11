@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-Anime=github:food22/Anime
+Anime=github:food22/Animess
 ```
