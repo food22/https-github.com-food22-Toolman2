@@ -1,5 +1,5 @@
-//% weight=0 color=#3CB371 icon="\uf0ad" block="ReadSignal"
-namespace readSignal {
+//% weight=0 color=#3CB371 icon="\uf0ad" block="rubbishbin"
+namespace rubbishBin {
     let check = 0;
     let move = 0;
     let run = 0;
