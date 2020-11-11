@@ -1,0 +1,9 @@
+{
+    "anime|block": "具",
+    "anime.running|block": "Not Found",
+    "anime.checking|block": "顯示檢查畫面",
+    "anime.moving|block": "判斷開啟",
+    "anime.distance|block": "顯示距離 %距離",
+    "anime.clearLight|block": "關閉所有燈",
+    "anime.getMoveTime|block": "讀取判斷時間"
+}
