@@ -1,4 +1,4 @@
-# rubbishbin
+# Anime
 
 這是測試用的micro:bit積木
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-rubbishbin=github:food22/pxt-readSignal
+Anime=github:food22/pxt-readSignal
 ```
