@@ -1,18 +1,16 @@
 //% weight=0 color=#3CB371 icon="\uf0ad" block="Anime"
 namespace PlayAnime {
     let check = 0;
-    let move = 0;
     let run = 0;
     let mode = -1;
 
     /**
     * 運作中
     */
-    //% blockId="running" block="Play Run"
-    //% blockGap=2 weight=0
+    //% blockId="Running" block="Play Run"
+    //% blockGap=2 weight=5
     export function Running(): void {
         check = 0;
-        move = 0;
         if (mode != 0) {
             mode = 0;
         }
@@ -25,10 +23,9 @@ namespace PlayAnime {
     /**
     * 偵測中
     */
-    //% blockId="checking" block="Play Check"
-    //% blockGap=2 weight=1
+    //% blockId="Checking" block="Play Check"
+    //% blockGap=2 weight=4
     export function Checking(): void {
-        move = 0;
         run = 0;
         if (mode != 1) {
             mode = 1;
@@ -56,43 +53,37 @@ namespace PlayAnime {
     }
 
     /**
-    * 運作中
+    * 準備中
     */
-    //% blockId="moving" block="Play Move"
-    //% blockGap=2 weight=2
-    export function Moving(): void {
+    //% blockId="Ready" block="Ready-Max Time %max|Now Time %now"
+    //% blockGap=2 weight=3
+    export function Ready(max: number, now: number): void {
         check = 0;
         run = 0;
         if (mode != 2) {
             mode = 2;
            ClearLight();
         }
-        if (move < 15) {
-            led.plot(1,Math.floor(move / 3));
-            led.plot(3,Math.floor(move / 3));  
-        } else if (move == 15) {
+        if (now < max / 6 * 5) {
+            led.plot(1,Math.floor(now / (max / 6)));
+            led.plot(3,Math.floor(now / (max / 6)));  
+        } else if (now == max / 6 * 5) {
             ClearLight();
             led.plot(0,1);
             led.plot(1,1);
             led.plot(3,1);
             led.plot(4,1);
             for(let i = 0; i < 5; i++) led.plot(i,3);
-        }      
-        move++;
-        if (move == 20) {
-            ClearLight();
-            move = 0;
         }
     }
 
    /**
     * 顯示距離
     */
-    //% blockId="distance" block="Play Distance %length"
-    //% blockGap=2 weight=3
+    //% blockId="Distance" block="Play Distance %length"
+    //% blockGap=8 weight=2
     export function Distance(length: number): void {
         check = 0;
-        move = 0;
         run = 0;
         if (mode != 3) {
             mode = 3;
@@ -129,24 +120,22 @@ namespace PlayAnime {
     }
 
     /**
-    * 關閉所有燈
+    * 讀取距離
     */
-    //% blockId="clearLight" block="Clear Light"
-    //% blockGap=2 weight=4
-    export function ClearLight(): void {
+    //% blockId="GetDistance" block="Get GetDistance PinData%pinData|Accurate%accurate"
+    //% blockGap=10 weight=0
+    //% pinData.min=0 pinData.max = 1023
+
+   export function GetDistance(pinData: number, accurate: boolean): number {
+       return Math.floor(pinData / 1023 * 100 * 10 ** (accurate ? 1 : 0)) / 10 ** (accurate ? 1 : 0)
+       }
+}
+
+//**關閉所有燈 */
+    function ClearLight(): void {
         for(let i = 0; i < 5; i++) {
             for(let j = 0; j < 5; j++) {
                 led.unplot(j, i);
             }
         }
     }
-
-    /**
-    * 讀取移動時間
-    */
-    //% blockId="getMoveTime" block="Get Move Time"
-    //% blockGap=10 weight=5
-   export function GetMoveTime(): number {
-       return move;
-       }
-}
