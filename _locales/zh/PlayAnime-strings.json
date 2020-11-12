@@ -3,6 +3,6 @@
     "PlayAnime.Running|block": "顯示運作動畫",
     "PlayAnime.Checking|block": "顯示偵察動畫",
     "PlayAnime.Ready|block": "顯示準備動畫 最大值%max|現時值%now",
-    "PlayAnime.Distance|block": "顯示距離",
+    "PlayAnime.Distance|block": "顯示距離 %length",
     "PlayAnime.GetDistance|block": "讀取距離 引腳資料%pinData|保留毫米%accurate"
 }
