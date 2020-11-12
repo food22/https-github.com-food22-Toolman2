@@ -1,6 +1,6 @@
-# PlayAnime
+# Toolman
 
-這是測試用的micro:bit積木
+Toolman
 
 ## License
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-PlayAnime=github:food22/PlayAnime
+Toolman=github:food22/Toolman
 ```
