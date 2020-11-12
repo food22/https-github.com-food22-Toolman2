@@ -1,5 +1,5 @@
 {
-    "Toolman|block": "工具人",
+    "Toolman|block": "工具人s",
     "Toolman.Running|block": "顯示運作動畫",
     "Toolman.Checking|block": "顯示偵察動畫",
     "Toolman.Ready|block": "顯示準備動畫 最大值%max|現時值%now",
