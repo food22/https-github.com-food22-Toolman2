@@ -58,6 +58,7 @@ namespace Toolman {
     //% blockId="Ready" block="Ready-Max Time %max|Now Time %now"
     //% blockGap=2 weight=3
     export function Ready(max: number, now: number): void {
+        now++;
         check = 0;
         run = 0;
         if (mode != 2) {
