@@ -1,5 +1,5 @@
 //% weight=0 color=#3CB371 icon="\uf0ad" block="Anime"
-namespace PlayAnime {
+namespace Toolman {
     let check = 0;
     let run = 0;
     let mode = -1;
