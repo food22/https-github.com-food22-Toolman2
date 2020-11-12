@@ -1,4 +1,4 @@
-//% weight=0 color=#3CB371 icon="\uf0ad" block="Anime"
+//% weight=0 color=#3CB371 icon="\uf0ad" block="Toolman"
 namespace Toolman {
     let check = 0;
     let run = 0;
