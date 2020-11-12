@@ -10,9 +10,9 @@ namespace Toolman {
     //% blockId="Running" block="Play Run"
     //% blockGap=2 weight=5
     export function Running(): void {
-        check = 0;
         if (mode != 0) {
             mode = 0;
+            check = 0;
         }
         ClearLight();
         led.plot(Math.floor(run / 3),2)
@@ -26,9 +26,9 @@ namespace Toolman {
     //% blockId="Checking" block="Play Check"
     //% blockGap=2 weight=4
     export function Checking(): void {
-        run = 0;
         if (mode != 1) {
             mode = 1;
+            run = 0;
             ClearLight();
         }
         if (check == 0 || check == 5) {
@@ -59,16 +59,16 @@ namespace Toolman {
     //% blockGap=2 weight=3
     export function Ready(max: number, now: number): void {
         max++;
-        check = 0;
-        run = 0;
         if (mode != 2) {
+            check = 0;
+            run = 0;
             mode = 2;
-           ClearLight();
+            ClearLight();
         }
         if (now < max / 6 * 5) {
             led.plot(1,Math.floor(now / (max / 6)));
             led.plot(3,Math.floor(now / (max / 6)));  
-        } else if (now == Math.floor(max / 6) * 6) {
+        } else if (now == max / 6 * 5) {
             ClearLight();
             led.plot(0,1);
             led.plot(1,1);
@@ -84,10 +84,10 @@ namespace Toolman {
     //% blockId="Distance" block="Play Distance %length"
     //% blockGap=8 weight=2
     export function Distance(length: number): void {
-        check = 0;
-        run = 0;
         if (mode != 3) {
             mode = 3;
+            check = 0;
+            run = 0;
             ClearLight();
         }
         if (length > 100 || length < 0) {
