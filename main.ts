@@ -123,7 +123,7 @@ namespace Toolman {
     /**
     * 讀取距離
     */
-    //% blockId="GetDistance" block="Get GetDistance PinData%pinData|Accurate%accurate"
+    //% blockId="GetDistance" block="Get Distance PinData%pinData|Accurate%accurate"
     //% blockGap=10 weight=0
     //% pinData.min=0 pinData.max = 1023
 
