@@ -68,7 +68,7 @@ namespace Toolman {
         if (now < max / 6 * 5) {
             led.plot(1,Math.floor(now / (max / 6)));
             led.plot(3,Math.floor(now / (max / 6)));  
-        } else if (now == max / 6 * 5) {
+        } else if (now == Math.floor(max / 6) * 6) {
             ClearLight();
             led.plot(0,1);
             led.plot(1,1);
