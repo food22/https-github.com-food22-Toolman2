@@ -1,7 +1,7 @@
 {
-    "name": "PlayAnime",
+    "name": "Toolman",
     "version": "1.0",
-    "description": "垃圾桶",
+    "description": "Toolman",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/PlayAnime-strings.json"
+        "_locales/zh/Toolman-strings.json"
     ],
     "public": true
 }
